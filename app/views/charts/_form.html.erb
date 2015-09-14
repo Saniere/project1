@@ -1,0 +1,29 @@
+<%= simple_form_for(@chart) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-inputs">
+    <%= f.association :user %>
+    <%= f.input :name %>
+		<%= f.input :sex %>
+    <%= f.association :category %>
+    <%= f.input :main_symptom %>
+    <%= f.input :onset %>
+    <%= f.input :provoke %>
+    <%= f.input :quality %>
+    <%= f.input :radiation %>
+    <%= f.input :severe %>
+    <%= f.input :time %>
+    <%= f.input	:pain_area %>
+    <%= f.input :diagnose %>
+    <%= f.input :dia_reason %>
+    <%= f.input :acu_plan %>
+    <%= f.input :acu_reason %>
+    <%= f.input :herb_plan %>
+    <%= f.input :herb_reason %>
+    <%= f.input :published %>
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>

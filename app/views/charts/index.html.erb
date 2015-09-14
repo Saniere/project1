@@ -1,0 +1,63 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Charts</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>User</th>
+      <th>Name</th>
+      <th>Sex</th>
+      <th>Category</th>
+      <th>Main symptom</th>
+      <th>Onset</th>
+      <th>Provoke</th>
+      <th>Quality</th>
+      <th>Radiation</th>
+      <th>Severe</th>
+      <th>Time</th>
+      <th>Pain area</th>
+      <th>Diagnose</th>
+      <th>Dia reason</th>
+      <th>Acu plan</th>
+      <th>Acu reason</th>
+      <th>Herb plan</th>
+      <th>Herb reason</th>
+      <th>Published</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @charts.each do |chart| %>
+      <tr>
+        <td><%= chart.user.email %></td>
+        <td><%= chart.name %></td>
+        <td><%= chart.sex %></td>
+        <td><%= chart.category %></td>
+        <td><%= chart.main_symptom %></td>
+        <td><%= chart.onset %></td>
+        <td><%= chart.provoke %></td>
+        <td><%= chart.quality %></td>
+        <td><%= chart.radiation %></td>
+        <td><%= chart.severe %></td>
+        <td><%= chart.time %></td>
+        <td><%= chart.pain_area %></td>
+        <td><%= chart.diagnose %></td>
+        <td><%= chart.dia_reason %></td>
+        <td><%= chart.acu_plan %></td>
+        <td><%= chart.acu_reason %></td>
+        <td><%= chart.herb_plan %></td>
+        <td><%= chart.herb_reason %></td>
+        <td><%= chart.published %></td>
+        <td><%= link_to 'Show', chart %></td>
+        <td><%= link_to 'Edit', edit_chart_path(chart) %></td>
+        <td><%= link_to 'Destroy', chart, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Chart', new_chart_path %>

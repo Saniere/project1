@@ -1,0 +1,99 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>User:</strong>
+  <%= @chart.user.email %>
+</p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @chart.name %>
+</p>
+
+<p>
+  <strong>Sex:</strong>
+  <%= @chart.sex %>
+</p>
+
+<p>
+  <strong>Category:</strong>
+  <%= @chart.category %>
+</p>
+
+<p>
+  <strong>Main symptom:</strong>
+  <%= @chart.main_symptom %>
+</p>
+
+<p>
+  <strong>Onset:</strong>
+  <%= @chart.onset %>
+</p>
+
+<p>
+  <strong>Provoke:</strong>
+  <%= @chart.provoke %>
+</p>
+
+<p>
+  <strong>Quality:</strong>
+  <%= @chart.quality %>
+</p>
+
+<p>
+  <strong>Radiation:</strong>
+  <%= @chart.radiation %>
+</p>
+
+<p>
+  <strong>Severe:</strong>
+  <%= @chart.severe %>
+</p>
+
+<p>
+  <strong>Time:</strong>
+  <%= @chart.time %>
+</p>
+
+<p>
+  <strong>Pain area:</strong>
+  <%= @chart.pain_area %>
+</p>
+
+<p>
+  <strong>Diagnose:</strong>
+  <%= @chart.diagnose %>
+</p>
+
+<p>
+  <strong>Dia reason:</strong>
+  <%= @chart.dia_reason %>
+</p>
+
+<p>
+  <strong>Acu plan:</strong>
+  <%= @chart.acu_plan %>
+</p>
+
+<p>
+  <strong>Acu reason:</strong>
+  <%= @chart.acu_reason %>
+</p>
+
+<p>
+  <strong>Herb plan:</strong>
+  <%= @chart.herb_plan %>
+</p>
+
+<p>
+  <strong>Herb reason:</strong>
+  <%= @chart.herb_reason %>
+</p>
+
+<p>
+  <strong>Published:</strong>
+  <%= @chart.published %>
+</p>
+
+<%= link_to 'Edit', edit_chart_path(@chart), class:'btn btn-default' %> |
+<%= link_to 'Back', charts_path, class: 'btn btn-default' %>
